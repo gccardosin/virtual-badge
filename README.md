@@ -1,4 +1,4 @@
 # virtual-badge
 Crachá virtual
 
-https://gccardosin.github.io/virtual-badge/
+<a href="https://gccardosin.github.io/virtual-badge/" target="_blank">Link para a pagina</a>
