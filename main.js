@@ -27,7 +27,7 @@ function getGitHubProfileInfos() {
     .then(response => response.json())
     .then(data => {
       userName.textContent = data.name
-      userBio.textContent = data.bio
+      
       userLink.href = data.html_url
       userImage.src = data.avatar_url
       userLogin.textContent = data.login
@@ -35,3 +35,14 @@ function getGitHubProfileInfos() {
 }
 
 getGitHubProfileInfos()
+
+function typeWriter(elemento) {
+  const textoArray = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  textoArray.forEach((letra, i) => {
+    setTimeout(() => elemento.innerHTML += letra, 75 * i);
+  });
+}
+
+const paragrafo = document.querySelector('p');
+typeWriter(paragrafo);
